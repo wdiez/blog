@@ -1,9 +1,22 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Title from '@components/Title.astro';
+import BlogPreview from '@components/BlogPreview.astro';
+
+let allPost = await Astro.glob("./posts/**/*.md");
+allPost = allPost.sort(
+	(fecha1, fecha2) => 
+		new Date(fecha2.frontmatter.date).valueOf() -
+		new Date(fecha1.frontmatter.date).valueOf()
+	);
 ---
 
 <Layout title="Welcome to my blog.">
-	<Title title="My programming" title2="Blog" subtitle="Awesome blog with Astro"/>
+	<Title
+		title="My programming" 
+		title2="Blog" 
+		subtitle="Awesome blog with Astro"
+	/>
+	{allPost.map((p:any) => <BlogPreview post={p}/>)}
 </Layout>
 

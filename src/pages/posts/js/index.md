@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/Layoutmd.astro"
 title: Learning Javascript
-date: 23 Sep 2022
+date: 21 Oct 2022
 author: Demian Ruiz
 desc: Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque reiciendis culpa nulla totam assumenda dolores eius aliquam quidem praesentium et libero ex error eaque tenetur, omnis beatae labore. Ipsum, nisi.
 image: https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png
